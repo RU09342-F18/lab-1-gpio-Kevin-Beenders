@@ -13,9 +13,11 @@ int main(void)
 
 	while (1)
 	{
+	//if  (P1 is an output, and BIT3 is true) and is NOT BIT3
 	if ((P1IN & BIT3) != BIT3)
 	{
-	    P1OUT ^= BIT0;           //
+	    //BIT0 is toggles
+	    P1OUT ^= BIT0;           
 	    __delay_cycles(500000); //Delays 1000000 cycles to slow down loop speed
 	}
 	}
